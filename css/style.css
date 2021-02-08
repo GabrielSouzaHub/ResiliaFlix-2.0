@@ -1,0 +1,13 @@
+.img-carousel-1 {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 800px;
+}
+.img-carousel-2 {
+    object-fit: cover;
+    height: 800px;
+}
+.img-carousel-3 {
+    object-fit: cover;
+    height: 800px;
+}
