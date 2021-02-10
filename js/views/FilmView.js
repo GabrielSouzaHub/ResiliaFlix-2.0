@@ -1,11 +1,13 @@
 class FilmView{
     constructor(){
-        this.container = document.querySelector(".film-container");
+        this.container = document.querySelector(".containers");
     }
     update(model){
-        this.container.innerHTML = 
-        `<p>${model.title}</p>
-         <img src=${model.poster}>  
+        this.container.innerHTML += 
+        `<div class="film-container">
+        <p class="film-title">${model.title}</p>
+         <img class="film-poster" src=${model.poster}">
+         </div>  
         `
     }
 }
