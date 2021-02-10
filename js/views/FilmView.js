@@ -3,7 +3,7 @@ class FilmView{
         this.container = document.querySelector(".film-container");
     }
     update(model){
-        this.container.innerHTML = 
+        this.container.innerHTML += 
         `<p>${model.title}</p>
          <img src=${model.poster}>  
         `
