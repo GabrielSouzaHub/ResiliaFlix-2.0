@@ -13,13 +13,21 @@
     margin-left: 5%;
 }
 
+.imagem-carousel{
+
+    height: 80vh;
+    object-fit: cover;
+    object-position: 0 15%;
+
+}
+
 .containers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
-    margin: 2% auto;
+    margin: 0 auto;
     padding: 2%;
-    border-radius: 50%;
+    background: #33343c;
 }
 
 .film-container {
@@ -29,7 +37,7 @@
 
 .main-content {
     background-color: #212529;
-    padding:0;
+    padding: 0;
 }
 
 .film-poster {
@@ -107,6 +115,34 @@
 
 .item {
     justify-content: flex-end;
+}
+
+
+.grid-container {
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+    margin-left: 15%;
+}
+
+.info-um{
+    width: 300px;
+}
+
+.info-dois{
+    width: 300px;
+}
+.text{
+    font-size: 17px;
+    color: #fff;
+}
+span{
+    font-weight: bold;
+}
+
+.poster:hover{
+    transform: scale(1.1);
+    transition-duration: 0.8s;
 }
 
 

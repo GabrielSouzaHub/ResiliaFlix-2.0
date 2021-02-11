@@ -15,20 +15,29 @@ class FilmView{
     updatePesquisa(model){
         this.container.innerHTML =
         `
-        <p>${model.title}</p>
-        <img src=${model.poster}>
-        <p>${model.released}</p>
-        <p>${model.runtime}</p>
-        <p>${model.genre}</p>
-        <p>${model.director}</p>
-        <p>${model.writter}</p>
-        <p>${model.actors}</p>
-        <p>${model.plot}</p>
-        <p>${model.language}</p>
-        <p>${model.country}</p>
-        <p>${model.awards}</p>
-        <p>${model.boxOffice}</p>
-        <p>${model.production}</p>
+        <div class="grid-container">
+        <picture>
+        <img class="poster" src=${model.poster}>
+        </picture>
+        <div class="info-um">
+        <p class="text"><span>Titulo:</span> ${model.title}</p>
+        <p class="text"><span>Lançamento:</span> ${model.released}</p>
+        <p class="text"><span>Duração:</span> ${model.runtime}</p>
+        <p class="text"><span>Gênero:</span> ${model.genre}</p>
+        <p class="text"><span>Diretor:</span> ${model.director}</p>
+        <p class="text">${model.writter}</p>
+        <p class="text"><span>Elenco:</span> ${model.actors}</p>
+        </div>
+        <div class="info-dois">
+        <p class="text"><span>Roteiro:</span> ${model.plot}</p>
+        <p class="text"><span>Idioma:</span> ${model.language}</p>
+        <p class="text"><span>País:</span> ${model.country}</p>
+        <p class="text"><span>Prêmios:</span> ${model.awards}</p>
+        <p class="text"><span>Bilheteria:</span> ${model.boxOffice}</p>
+        <p class="text"><span>Produtora:</span> ${model.production}</p>
+        </div>
+        </div>
+
         `
         console.log(model.ratings);
     }
