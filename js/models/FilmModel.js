@@ -20,8 +20,50 @@ class FilmModel{
     get title(){
         return this._title;
     }
+    get year(){
+        return this._year;
+    }
+    get released(){
+        return this._released;
+    }
+    get runtime(){
+        return this._runtime;
+    }
+    get genre(){
+        return this._genre;
+    }
+    get director(){
+        return this._director;
+    }
+    get writer(){
+        return this._writer;
+    }
+    get actors(){
+        return this._actors;
+    }
+    get plot(){
+        return this._plot;
+    }
+    get language(){
+        return this._language;
+    }
+    get country(){
+        return this._country;
+    }
+    get awards(){
+        return this._awards;
+    }
     get poster(){
         return this._posterUrl;
+    }
+    get ratings(){
+        return this._ratings;
+    }
+    get boxOffice(){
+        return this._boxOffice;
+    }
+    get production(){
+        return this._production;
     }
     fazRequest(filme,callback){  
         let request = new XMLHttpRequest;   
