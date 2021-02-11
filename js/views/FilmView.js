@@ -13,6 +13,8 @@ class FilmView{
         
     }
     updatePesquisa(model){
+        try{
+            if(model.title===undefined) throw `<img src=../../img/404.jpg>`
         this.container.innerHTML =
         `
         <p>${model.title}</p>
@@ -29,7 +31,14 @@ class FilmView{
         <p>${model.awards}</p>
         <p>${model.boxOffice}</p>
         <p>${model.production}</p>
-        `
-        console.log(model.ratings);
+        `   
+        }
+        catch(e){
+            this.container.innerHTML = 
+            `
+            ${e}
+            `
+        }
+
     }
 }

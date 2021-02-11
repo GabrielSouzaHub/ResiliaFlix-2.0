@@ -1,76 +1,76 @@
-class FilmModel{
-    constructor(){
-       this._title;
-       this._year;
-       this._released;
-       this._runtime;
-       this._genre;
-       this._director;
-       this._writer;
-       this._actors;
-       this._plot;
-       this._language;
-       this._country;
-       this._awards;
-       this._posterUrl;
-       this._ratings; 
-       this._boxOffice;
-       this._production; 
+class FilmModel {
+    constructor() {
+        this._title;
+        this._year;
+        this._released;
+        this._runtime;
+        this._genre;
+        this._director;
+        this._writer;
+        this._actors;
+        this._plot;
+        this._language;
+        this._country;
+        this._awards;
+        this._posterUrl;
+        this._ratings;
+        this._boxOffice;
+        this._production;
     }
-    get title(){
+    get title() {
         return this._title;
     }
-    get year(){
+    get year() {
         return this._year;
     }
-    get released(){
+    get released() {
         return this._released;
     }
-    get runtime(){
+    get runtime() {
         return this._runtime;
     }
-    get genre(){
+    get genre() {
         return this._genre;
     }
-    get director(){
+    get director() {
         return this._director;
     }
-    get writer(){
+    get writer() {
         return this._writer;
     }
-    get actors(){
+    get actors() {
         return this._actors;
     }
-    get plot(){
+    get plot() {
         return this._plot;
     }
-    get language(){
+    get language() {
         return this._language;
     }
-    get country(){
+    get country() {
         return this._country;
     }
-    get awards(){
+    get awards() {
         return this._awards;
     }
-    get poster(){
+    get poster() {
         return this._posterUrl;
     }
-    get ratings(){
+    get ratings() {
         return this._ratings;
     }
-    get boxOffice(){
+    get boxOffice() {
         return this._boxOffice;
     }
-    get production(){
+    get production() {
         return this._production;
     }
-    fazRequest(filme,callback){  
-        let request = new XMLHttpRequest;   
-        request.open("GET",`http://www.omdbapi.com/?t=${filme}&apikey=e943e54`);
-    
-        request.addEventListener("load",() =>{
-                if(request.status == 200){
+    fazRequest(filme, callback) {
+        let request = new XMLHttpRequest;
+        request.open("GET", `http://www.omdbapi.com/?t=${filme}&apikey=e943e54`);
+
+        request.addEventListener("load", () => {
+                if (request.status == 200) {
                     let response = JSON.parse(request.responseText);
                     this._title = response.Title;
                     this._year = response.Year;
@@ -85,16 +85,16 @@ class FilmModel{
                     this._country = response.Country;
                     this._awards = response.Awards;
                     this._posterUrl = response.Poster;
-                    this._ratings = response.Ratings; 
+                    this._ratings = response.Ratings;
                     this._boxOffice = response.BoxOffice;
-                    this._production = response.Production; 
+                    this._production = response.Production;
                     callback();
-                }
-                else{
-                    console.log(request.status +" "+ request.statusText);
+                } else if(request.status==404){
+                    console.log(`Filme não encontrado ${request.status}`);
+                } else {
+                    console.log(`Erro:${request.status} Houve algo inesperado`);
                 }
         });
-    
         request.send();
     }
 
