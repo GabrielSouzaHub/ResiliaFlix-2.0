@@ -6,11 +6,16 @@
 
 body{
     background-color: black;
-    background-image: url("filmes2.jpg");
+    background-image: url("fundoLogin.png");
 }
 
 header{
     opacity: 0.8;
+}
+
+.text-color{
+    color: white;
+
 }
 
 .logo {
@@ -33,13 +38,17 @@ header{
     max-width: 800px;
 }
 
+.title-color{
+    color:#ffb700;
+}
+
 .btn1{
     border: none;
     outline: none;
     height: 40px;
     width: 100%;
-    background-color: black;
-    color: white;
+    background-color: #ffb700;
+    color: black;
     border-radius: 4px;
     font-weight: bold;
 }

@@ -232,6 +232,27 @@ span {
         max-width:100%
     }
 
+    .film-poster {
+        margin: 2% 0 0 20%;
+    }
+
+    .film-title {
+        margin:5% 0 0 24%;
+        font-size:20px;
+        width:100%
+        
+    }
+
+    .imagem-carousel {
+
+        height: 45vh;
+        object-fit: fill;
+        object-position: 0 15%;
+    
+    }
+
+   
+
 
 
 }
