@@ -17,7 +17,7 @@ class FilmView{
         <p>${model.runtime}</p>
         <p>${model.genre}</p>
         <p>${model.director}</p>
-        <p>${model.writter}</p>
+        <p>${model.writer}</p>
         <p>${model.actors}</p>
         <p>${model.plot}</p>
         <p>${model.language}</p>
