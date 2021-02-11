@@ -24,7 +24,7 @@ class FilmView{
         <p class="text"><span>Duração:</span> ${model.runtime}</p>
         <p class="text"><span>Gênero:</span> ${model.genre}</p>
         <p class="text"><span>Diretor:</span> ${model.director}</p>
-        <p class="text">${model.writer}</p>
+        <p class="text"><span>Escritor:</span> ${model.writer}</p>
         <p class="text"><span>Elenco:</span> ${model.actors}</p>
         </div>
         <div class="info-dois">
