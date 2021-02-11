@@ -1,12 +1,60 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
 }
 
 .logo {
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
+    margin-left: 5%;
 }
+
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    margin: 2% auto;
+    padding: 2%;
+    border-radius: 50%;
+}
+
+.film-container {
+    margin: 2% 2%;
+    width: 50%;
+}
+
+.main-content {
+    background-color: #212529;
+    padding:0;
+}
+
+.film-poster {
+    width: 280px;
+    height: 400px;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.film-poster:hover {
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+
+.film-title {
+    display: flex;
+    max-width: 500px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: dashed;
+}
+
 
 
 .img-carousel-1 {
@@ -111,6 +159,14 @@
     .input {
         margin-left: 10%;
 
+    }
+
+    .containers {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        margin: 0 auto;
+        margin-left: 10%;
     }
 }
 
