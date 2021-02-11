@@ -54,9 +54,9 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main-content">
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -77,20 +77,19 @@
       </picture>
 
 
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
       </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
       </a>
 
     </div>
-    <button type="submit" onclick="FilmController.paginaPesquisa()">Clica</button>
-    <div class="film-container">
-      
-    </div>
+
+    <div class="containers"></div>
+
   </main>
 
   <footer class="footer-dark">
@@ -143,8 +142,21 @@
     <script src="./js/controllers/FilmController.js"></script>
     <script src="./js/views/FilmView.js"></script>
     <script>
+
       document.querySelector('#formPesquisa').addEventListener("submit",(event)=>{event.preventDefault()});
+      FilmController.buscaFilme("Kill bill");
+      FilmController.buscaFilme("1917");
+      FilmController.buscaFilme("Batman");
       FilmController.buscaFilme("The Avengers");
+      FilmController.buscaFilme("The Green Mile");
+      FilmController.buscaFilme("The godfather");
+      FilmController.buscaFilme("Mulan");
+      FilmController.buscaFilme("Joker");
+      FilmController.buscaFilme("Fight club");
+      FilmController.buscaFilme("Thor");
+      FilmController.buscaFilme("Pearl Harbor");
+      FilmController.buscaFilme("Forrest Gump");
+
     </script>
 
 </body>
