@@ -12,10 +12,10 @@
     <section class="Form my-5 mx-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 px-5 pt-5">
+                <div class="col-lg-7 px-5 pt-5" id="div-form">
                     <h1 class="font-weight-bold py-3">ResiliaFlix</h1>
                     <h4>Cadastre-se</h4>
-                    <form>
+                    <form onsubmit="envia()" id="form-envia">
                         <div class="form-row">
                             <div class="col-lg-12">
                                 <input type="name" placeholder="Insira seu nome completo" class="form-control my-3" id="validationCustom01" required>
@@ -28,7 +28,7 @@
                         </div>
                         <div class="form-row">
                             <div class="col-lg-12">
-                                <input type="rg" placeholder="Insira seu RG" class="form-control my-3" required>
+                                <input type="text" id="rg" maxlength="9" placeholder="Insira seu RG" class="form-control my-3" required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -80,6 +80,23 @@
     <script src="../js/models/CepModel.js"></script>
     <script src="../js/controllers/CepController.js"></script>
     <script src="../js/views/CepView.js"></script>
+    <script>
+        var $ = document.querySelector.bind(document);
+        $('#form-envia').addEventListener("submit",(event)=>{event.preventDefault()});
+        function envia(){
+            
+            let container = $(".row");
+            let formContainer = $("#div-form");
+            formContainer.hidden = true;
+            container.innerHTML = 
+            `
+            <div class="alert alert-success" role="alert">
+                Cadastrado com sucesso!
+            </div>
+            `
+            setTimeout(()=>location.href = "../index.html",3000);
+        }
+    </script>
     
 
 </body>
