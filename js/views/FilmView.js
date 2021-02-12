@@ -12,8 +12,11 @@ class FilmView{
          `
     }
     updatePesquisa(model){
+        try{
+            if(model.title===undefined) throw `<img src=../../img/404.jpg>`
         this.container.innerHTML =
         `
+
         <div class="grid-container">
         <picture>
         <img class="poster" src=${model.poster}>
@@ -36,7 +39,15 @@ class FilmView{
         <p class="text"><span>Produtora:</span> ${model.production}</p>
         </div>
         </div>
-         `
-        console.log(model.ratings);
+         ` 
+        }
+        catch(e){
+            this.container.innerHTML = 
+            `
+            ${e}
+            `
+        }
+
+
     }
 }

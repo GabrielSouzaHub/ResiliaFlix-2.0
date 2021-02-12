@@ -1,4 +1,4 @@
-class CpfModel {
+class CepModel {
     constructor(){
         this._endereco;
         this._cidade;
@@ -24,15 +24,23 @@ class CpfModel {
         request.open("GET",`https://viacep.com.br/ws/${cep}/json/`);
 
         request.addEventListener("load",()=>{
-            if(request.status == 200)
-            {
-                let response = JSON.parse(request.responseText);
-                this._endereco = response.logradouro;
-                this._cidade = response.localidade;
-                this._bairro = response.bairro;
-                this._estado = response.uf;
-                callback();
-            }    
+            try{
+                if(request.status == 200)
+                {
+                    let response = JSON.parse(request.responseText);
+                    this._endereco = response.logradouro;
+                    this._cidade = response.localidade;
+                    this._bairro = response.bairro;
+                    this._estado = response.uf;
+                    callback();
+                }
+                else throw "Algo deu errado :(";
+                 
+            }
+            catch(e){
+                alert(e);
+            }
+                
             
         });
 

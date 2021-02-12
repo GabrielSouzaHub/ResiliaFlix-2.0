@@ -10,7 +10,6 @@ class FilmController {
     static buscaFilmebarra(){
         let model = new FilmModel();
         model.fazRequest(localStorage.getItem('meuFilme'),() => {let view = new FilmView(); view.updatePesquisa(model)});
-        console.log(localStorage.getItem('meuFilme'));
     }
     static buscaFilmeImg(filme){
         localStorage.setItem('meuFilme', filme);
