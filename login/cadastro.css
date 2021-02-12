@@ -1,15 +1,15 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
     background-image: url("fundoLogin.png");
 }
 
-header{
+header {
     opacity: 0.8;
 }
 
@@ -18,25 +18,25 @@ header{
     font-family: 'Fredoka One', cursive;
     margin-left: 5%;
 
-    
+
 }
 
-.divContainer{
+.divContainer {
     max-width: 100%;
     width: 800px;
     padding: 0;
 }
 
-.text-color{
+.text-color {
     color: white;
 
 }
 
-.title-color{
-    color:#ffb700;
+.title-color {
+    color: #ffb700;
 }
 
-.cadastro{
+.cadastro {
     display: flex;
     justify-content: center;
     background-color: white;
@@ -45,16 +45,16 @@ header{
 
 }
 
-.btn-modal{
-    background-color:#ffb700;
-    color:black;
-    width: 50%;	
-    margin:3%;
+.btn-modal {
+    background-color: #ffb700;
+    color: black;
+    width: 50%;
+    margin: 3%;
     font-weight: bold;
 
 }
 
-.btn1{
+.btn1 {
     border: none;
     outline: none;
     height: 40px;
@@ -65,18 +65,18 @@ header{
     font-weight: bold;
 }
 
-.btn1:hover{
+.btn1:hover {
     background-color: white;
     border: 1px solid;
     color: black;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .container {
         width: 100%;
     }
 }
@@ -174,7 +174,7 @@ a{
     border-radius: 50%;
     box-shadow: 0 0 0 1px #ffb700;
     margin: 0 8px;
-    color:#ffb700;
+    color: #ffb700;
     opacity: 0.75;
 }
 
@@ -188,12 +188,12 @@ a{
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
-    color:#ffb700;
+    color: #ffb700;
 
 }
 
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .container {
         width: 100%;
     }
 }
