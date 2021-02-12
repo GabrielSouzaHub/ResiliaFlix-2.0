@@ -16,6 +16,8 @@
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
     margin-left: 5%;
+    color:#ffb700;
+
 }
 
 
@@ -39,10 +41,12 @@
 
 .btn {
     margin-left: 40%;
+
 }
 
 .item {
     justify-content: flex-end;
+
 }
 
 
@@ -119,6 +123,7 @@
     margin: 10px;
     font-size: 16px;
     font-family: 'Fredoka One', cursive;
+
 }
 
 
@@ -255,9 +260,10 @@ span {
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 1px #ffb700;
+    ;
     margin: 0 8px;
-    color: #fff;
+    color:#ffb700;
     opacity: 0.75;
 }
 
@@ -271,6 +277,8 @@ span {
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+    color:#ffb700;
+
 }
 
 

@@ -17,6 +17,7 @@ header{
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
     margin-left: 5%;
+
     
 }
 
@@ -171,9 +172,9 @@ a{
     display: inline-block;
     text-align: center;
     border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 1px #ffb700;
     margin: 0 8px;
-    color: #fff;
+    color:#ffb700;
     opacity: 0.75;
 }
 
@@ -187,6 +188,8 @@ a{
     opacity: 0.3;
     font-size: 13px;
     margin-bottom: 0;
+    color:#ffb700;
+
 }
 
 @media (max-width: 768px){
