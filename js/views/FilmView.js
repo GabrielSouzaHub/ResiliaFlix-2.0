@@ -13,7 +13,7 @@ class FilmView{
     }
     updatePesquisa(model){
         try{
-            if(model.title===undefined) throw `<img src=../../img/404.jpg>`
+            if(model.title===undefined) throw `<img src=../../ResiliaFlix-2.0/img/404.jpg>`
         this.container.innerHTML =
         `
 
