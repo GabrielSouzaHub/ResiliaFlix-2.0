@@ -20,11 +20,11 @@
     </header>     
     <section class="Form my-5 mx-5">
         <div class="container divContainer">
-            <div class="row cadastro bg-dark">
+            <div class="row cadastro bg-dark" id="container-form">
                 <div class="col-lg-7 px-5 pt-5 bg-dark" id="div-form">
                     <h1 class="font-weight-bold py-3 title-color">ResiliaFlix</h1>
                     <h4 class="text-color">Cadastre-se</h4>
-                    <form onsubmit="envia()" id="form-envia">
+                    <form onsubmit="CadastroController.enviaCadastro()" id="form-envia">
 
                         <div class="form-row">
                             <div class="col-lg-12">
@@ -134,25 +134,7 @@
     <script src="../js/models/CepModel.js"></script>
     <script src="../js/controllers/CepController.js"></script>
     <script src="../js/views/CepView.js"></script>
-    <script>
-        var $ = document.querySelector.bind(document);
-        $('#form-envia').addEventListener("submit",(event)=>{event.preventDefault()});
-        function envia(){
-            
-            let container = $(".row");
-            let formContainer = $("#div-form");
-            //formContainer.hidden = true;
-            container.innerHTML += 
-            `
-            <div class="alert alert-success" role="alert">
-                Cadastrado com sucesso!
-            </div>
-            `
-            setTimeout(()=>location.href = "../index.html",3000);
-        }
-    </script>
-    
-
-
+    <script src="../js/controllers/CadastroController.js"></script>
+    <script src="../js/views/CadastroView.js"></script>
 </body>
 </html>
