@@ -7,6 +7,10 @@ class FilmController {
         localStorage.setItem('meuFilme', document.getElementById("filmName").value);
         location.href="./pages/pesquisa.html";
     }
+    static pegaFilme(){
+        localStorage.setItem('meuFilme', document.getElementById("filmName").value);
+        location.href="pesquisa.html";
+    }
     static buscaFilmebarra(){
         let model = new FilmModel();
         model.fazRequest(localStorage.getItem('meuFilme'),() => {let view = new FilmView(); view.updatePesquisa(model)});
@@ -16,3 +20,4 @@ class FilmController {
         location.href="./pages/pesquisa.html";
     }
 }
+document.querySelector('#formPesquisa').addEventListener("submit",(event)=>{event.preventDefault()});
