@@ -44,6 +44,15 @@ header{
 
 }
 
+.btn-modal{
+    background-color:#ffb700;
+    color:black;
+    width: 50%;	
+    margin:3%;
+    font-weight: bold;
+
+}
+
 .btn1{
     border: none;
     outline: none;

@@ -72,7 +72,7 @@
       <div class="cards">
 
         <img class="picture" src="sauke.png">
-        <h2 class="titulo">Sasuke Uchiha</h2>
+        <h2 class="titulo">Gabriel Souza</h2>
         <p class="text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis eleifend dui, ac egestas
           tellus molestie
           et. </p>
@@ -98,7 +98,7 @@
           <h3>About</h3>
           <ul>
             <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-contato">Contato</a></li>
           </ul>
         </div>
 
@@ -133,6 +133,47 @@
   </footer>
 
 
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <main class="modal-dialog bg-dark">
+
+      <dialog class="modal-content">
+
+        <header class="modal-header bg-dark">
+          <h5 class="modal-title title-color" id="exampleModalLabel">Contate-nos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+
+        <div class="modal-body bg-dark">
+
+          <section class="mb-3">
+            <label for="formGroupExampleInput" class="form-label text-color">Nome completo</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="insira seu nome completo">
+          </section>
+
+          <section class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-color">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </section>
+
+          <section class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label text-color">Deixe seu comentário</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="insira aqui seu comentário"></textarea>
+          </section>
+
+        </div>
+
+        <footer class="modal-footer bg-dark ">
+
+          <button type="button" class="btn btn-secondary btn-modal">Enviar</button>
+
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">Fechar</button>
+
+        </footer>
+      </dialog>
+    </main>
+  </div>
 
 
 
