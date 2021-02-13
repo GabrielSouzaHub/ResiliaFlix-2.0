@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="cadastro.css">
   <title>Cadastro</title>
 </head>
-
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
@@ -27,7 +26,7 @@
         <div class="col-lg-7 px-5 pt-5 bg-dark" id="div-form">
           <h1 class="font-weight-bold py-3 title-color">ResiliaFlix</h1>
           <h4 class="text-color">Cadastre-se</h4>
-          <form onsubmit="envia()" id="form-envia">
+          <form onsubmit="CadastroController.enviaCadastro()" id="form-envia">
 
             <div class="form-row">
               <div class="col-lg-12">
@@ -135,31 +134,6 @@
       <p class="copyright">ResiliaFlix ©2021</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-    crossorigin="anonymous"></script>
-  <script src="../js/models/CepModel.js"></script>
-  <script src="../js/controllers/CepController.js"></script>
-  <script src="../js/views/CepView.js"></script>
-  <script>
-    var $ = document.querySelector.bind(document);
-    $('#form-envia').addEventListener("submit", (event) => { event.preventDefault() });
-    function envia() {
-
-      let container = $(".divContainer");
-      let formContainer = $("#div-form");
-      formContainer.hidden = true;
-      container.innerHTML +=
-        `
-            <div class="alert alert-success" role="alert">
-                Cadastrado com sucesso!
-            </div>
-            `
-      setTimeout(() => location.href = "../index.html", 3000);
-    }
-  </script>
-
-
   <!-- Modal -->
   <div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <main class="modal-dialog bg-dark">
@@ -201,7 +175,12 @@
       </dialog>
     </main>
   </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
+    <script src="../js/models/CepModel.js"></script>
+    <script src="../js/controllers/CepController.js"></script>
+    <script src="../js/views/CepView.js"></script>
+    <script src="../js/controllers/CadastroController.js"></script>
+    <script src="../js/views/CadastroView.js"></script>
 </body>
 
 </html>

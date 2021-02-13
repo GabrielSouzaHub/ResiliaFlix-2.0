@@ -67,7 +67,7 @@ class FilmModel {
     }
     fazRequest(filme, callback) {
         let request = new XMLHttpRequest;
-        request.open("GET", `http://www.omdbapi.com/?t=${filme}&apikey=e943e54`);
+        request.open("GET", `https://www.omdbapi.com/?t=${filme}&apikey=e943e54`);
 
         request.addEventListener("load", () => {
                 if (request.status == 200) {

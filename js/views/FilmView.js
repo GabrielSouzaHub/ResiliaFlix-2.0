@@ -13,7 +13,7 @@ class FilmView{
     }
     updatePesquisa(model){
         try{
-            if(model.title===undefined) throw `<img class="picture-erro" src=../img/404.jpg>`
+            if(model.title===undefined) throw `<img class="picture-erro" src=../../ResiliaFlix-2.0/img/404.jpg>`
         this.container.innerHTML =
         `
 
@@ -37,9 +37,12 @@ class FilmView{
         <p class="text"><span>Prêmios:</span> ${model.awards}</p>
         <p class="text"><span>Bilheteria:</span> ${model.boxOffice}</p>
         <p class="text"><span>Produtora:</span> ${model.production}</p>
+        <p class="text"><span>IMDB:</span> ${model.ratings[0].Value}</p>
+        <p class="text"><span>Rotten Tomatoes:</span> ${model.ratings[1].Value}</p>
+        <p class="text"><span>Metacritic:</span> ${model.ratings[2].Value}</p>
         </div>
         </div>
-         ` 
+         `
         }
         catch(e){
             this.container.innerHTML = 
