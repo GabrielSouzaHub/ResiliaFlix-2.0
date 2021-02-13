@@ -6,14 +6,14 @@ class FilmView{
         this.container.innerHTML += 
         `
         <div class="film-container">
-        <p class="film-title">${model.title}</p>
+        <p class="film-title">${model.title} <span class="rating">⭐${model.ratings[0].Value}</span></p>
          <img class="film-poster" src=${model.poster} onclick= "FilmController.buscaFilmeImg('${model.title}')">
          </div> 
          `
     }
     updatePesquisa(model){
         try{
-            if(model.title===undefined) throw `<img src=../../ResiliaFlix-2.0/img/404.jpg>`
+            if(model.title===undefined) throw `<img class="picture-erro" src=../../ResiliaFlix-2.0/img/404.jpg>`
         this.container.innerHTML =
         `
 

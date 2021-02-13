@@ -7,87 +7,16 @@
 
 }
 
+/* pagina principal*/
+
+
+/*navbar*/
+
 .logo {
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
     margin-left: 5%;
-}
-
-.imagem-carousel {
-
-    height: 83vh;
-    object-fit: cover;
-    object-position: 0 15%;
-
-}
-
-.containers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2px;
-    margin: 0 auto;
-    padding: 2%;
-    background: #33343c;
-}
-
-.film-container {
-    margin: 2% 2%;
-    width: 50%;
-}
-
-.main-content {
-    background-color: #212529;
-    padding: 0;
-}
-
-.film-poster {
-    width: 280px;
-    height: 400px;
-    padding: 5%;
-    border-radius: 10px;
-}
-
-.film-poster:hover {
-    transform: scale(1.1);
-    transition-duration: 0.8s;
-}
-
-
-.film-title {
-    display: flex;
-    max-width: 500px;
-    font-weight: bold;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: dashed;
-}
-
-
-
-.img-carousel-1 {
-    object-fit: cover;
-    object-position: 0 20%;
-    height: 800px;
-}
-
-.img-carousel-2 {
-    object-fit: cover;
-    height: 800px;
-}
-
-.img-carousel-3 {
-    object-fit: cover;
-    height: 800px;
-}
-
-.border {
-    display: flex;
-    border-radius: 15px;
-    border: 5px solid;
-    margin: 10px;
-    font-size: 16px;
-    font-family: 'Fredoka One', cursive;
+    color: #ffb700;
 
 }
 
@@ -111,6 +40,8 @@
 
 .btn {
     margin-left: 40%;
+    color: white;
+
 }
 
 .item {
@@ -118,11 +49,95 @@
 }
 
 
+/* Carrossel*/
+
+.imagem-carousel {
+
+    height: 83vh;
+    object-fit: cover;
+    object-position: 0 15%;
+
+}
+
+.img-carousel-1 {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 800px;
+}
+
+.img-carousel-2 {
+    object-fit: cover;
+    height: 800px;
+}
+
+.img-carousel-3 {
+    object-fit: cover;
+    height: 800px;
+}
+
+
+/* pagina informações filmes*/
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5%;
+    gap: 8%;
     margin-left: 15%;
+}
+
+.main-content {
+    background-color: #212529;
+    padding: 0;
+}
+
+.film-container {
+    margin: 2% 2%;
+    width: 50%;
+}
+
+.film-poster {
+    width: 280px;
+    height: 400px;
+    padding: 5%;
+    border-radius: 10px;
+    margin-left: 12%;
+}
+
+.film-poster:hover {
+    transform: scale(1.1);
+    transition-duration: 0.8s;
+}
+
+.film-title {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-decoration: dashed;
+    margin-left: 15%;
+}
+
+.border {
+    display: flex;
+    border-radius: 15px;
+    border: 5px solid;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'Fredoka One', cursive;
+}
+
+
+/* grid pagina principal*/
+
+.containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    margin: 0 auto;
+    padding: 2%;
+    background: #33343c;
 }
 
 .info-um {
@@ -138,18 +153,52 @@
     color: #fff;
 }
 
-span {
-    font-weight: bold;
-}
-
-
 .poster:hover {
     transform: scale(1.1);
     transition-duration: 0.8s;
 }
 
+span {
+    font-weight: bold;
+}
+
+.rating{
+    color: black;
+    background-color: #ffb700;
+    border-radius:8px;
+    padding: 0;
+    width: 30%;
+    font-size: 15px;
+}
+
+/* formularios*/
+
+.text-color {
+    color: white;
+
+}
+
+.title-color {
+    color: #ffb700;
+}
 
 
+/* modal contate-nos */
+.btn-modal {
+    background-color: #ffb700;
+    color: black;
+    width: 50%;
+    margin: 3%;
+    font-weight: bold;
+
+}
+
+
+/* pagina de err*/
+
+.picture-erro {
+    margin: 2% 0 2% 40%;
+}
 
 /* Footer*/
 
@@ -184,11 +233,52 @@ span {
     opacity: 0.8;
 }
 
-@media (max-width:767px) {
-    .footer-dark .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px;
-    }
+.footer-dark .item.text {
+    margin-bottom: 36px;
+}
+
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0;
+}
+
+.footer-dark .item.social {
+    text-align: center;
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #ffb700;
+    margin: 0 8px;
+    color: #ffb700;
+    opacity: 0.75;
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+    color: #ffb700;
+
+}
+
+
+/* Responsive celular*/
+
+@media (max-width:767px)  {
 
 
     .btn {
@@ -203,20 +293,18 @@ span {
     .containers {
         display: grid;
         grid-template-columns: 1fr;
-        align-items: center;
-        margin: 0 auto;
+        width: 100%;
+
     }
 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr;
-        align-items: center;
-        gap:0;
-        margin:0 auto;
+        gap: 0;
     }
 
     .info-um {
-        width: 100%;
+        width: 90%;
         padding: auto;
 
     }
@@ -225,86 +313,179 @@ span {
         width: 100%;
     }
 
-    
-    .poster{
-        margin: 10% 7%;
+
+    .poster {
+        margin: 0 auto;
         padding: auto;
-        max-width:100%
+        max-width: 100%;
     }
 
     .film-poster {
-        margin: 2% 0 0 20%;
+        margin: 0 0 0 15%;
+    }
+
+    .film-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+       
     }
 
     .film-title {
-        margin:5% 0 0 24%;
-        font-size:20px;
-        width:100%
-        
+        font-size: 20px;
+        width: 70%;
+        margin-left:20%;
+        overflow: hidden;
+    }
+
+    .rating{
+        margin-left: 1%;
+        width: 30%;
     }
 
     .imagem-carousel {
 
-        height: 45vh;
+        height: 40vh;
         object-fit: fill;
         object-position: 0 15%;
-    
+
     }
 
-   
-
-
-
+    .picture-erro{
+        display: flex;
+        width: 380px;
+        margin: 0 auto;
+    }
 }
 
-.footer-dark .item.text {
-    margin-bottom: 36px;
-}
 
+/*footer*/
 @media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
     .footer-dark .item.text {
         margin-bottom: 0;
     }
-}
 
-.footer-dark .item.text p {
-    opacity: 0.6;
-    margin-bottom: 0;
-}
-
-.footer-dark .item.social {
-    text-align: center;
-}
-
-@media (max-width:991px) {
     .footer-dark .item.social {
         text-align: center;
         margin-top: 20px;
     }
+
 }
 
-.footer-dark .item.social>a {
-    font-size: 20px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-    margin: 0 8px;
-    color: #fff;
-    opacity: 0.75;
+
+
+/* Responsive ipad*/
+
+
+/*footer*/
+@media (max-width:1024px) and (min-width:768px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+
 }
 
-.footer-dark .item.social>a:hover {
-    opacity: 0.9;
-}
+@media (max-width:1366px) and (min-width:768px) {
 
-.footer-dark .copyright {
-    text-align: center;
-    padding-top: 24px;
-    opacity: 0.3;
-    font-size: 13px;
-    margin-bottom: 0;
+
+    .btn {
+        margin-left: 40%;
+    }
+
+    .input {
+        margin-left: 15%;
+
+    }
+
+    .containers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 0;
+        padding: 0;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1%;
+        margin: 5% auto;
+    }
+
+    .info-um {
+        width: 90%;
+        padding: auto;
+
+    }
+
+    .info-dois {
+        width: 100%;
+    }
+
+    picture{
+        margin:0 auto;
+    }
+
+
+    .poster {
+        margin: 0 0 0 70%;
+        padding: auto;
+        max-width: 100%
+    }
+
+    .film-poster {
+        margin: 0 0 0 12%;
+    }
+
+    .film-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        flex-direction: column;
+       
+    }
+
+    .film-title {
+        text-align: center;
+        font-size: 20px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .rating {
+        margin-left: 38%;
+        width: 25%;
+
+    }
+
+    .imagem-carousel {
+
+        height: 40vh;
+        object-fit: fill;
+        object-position: 0 15%;
+
+    }
+
+    .picture-erro{
+        display: flex;
+        width: 600px;
+        height: 600px;
+        margin: 0 15%;
+        padding:10%;
+    }
 }
