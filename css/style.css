@@ -278,25 +278,6 @@ span {
 
 /* Responsive celular*/
 
-
-/*footer*/
-@media (max-width:767px) {
-    .footer-dark .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .footer-dark .item.text {
-        margin-bottom: 0;
-    }
-
-    .footer-dark .item.social {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-}
-
 @media (max-width:767px)  {
 
 
@@ -369,7 +350,33 @@ span {
         object-position: 0 15%;
 
     }
+
+    .picture-erro{
+        display: flex;
+        width: 380px;
+        margin: 0 auto;
+    }
 }
+
+
+/*footer*/
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+
 
 
 /* Responsive ipad*/
@@ -397,11 +404,11 @@ span {
 
 
     .btn {
-        margin-left: 30%;
+        margin-left: 40%;
     }
 
     .input {
-        margin-left: 10%;
+        margin-left: 15%;
 
     }
 
@@ -456,8 +463,14 @@ span {
     .film-title {
         text-align: center;
         font-size: 20px;
-        width: 90%;
-        margin-left: 17%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .rating {
+        margin-left: 38%;
+        width: 25%;
+
     }
 
     .imagem-carousel {
@@ -466,5 +479,13 @@ span {
         object-fit: fill;
         object-position: 0 15%;
 
+    }
+
+    .picture-erro{
+        display: flex;
+        width: 600px;
+        height: 600px;
+        margin: 0 15%;
+        padding:10%;
     }
 }

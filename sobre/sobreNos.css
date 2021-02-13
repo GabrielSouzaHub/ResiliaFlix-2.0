@@ -183,3 +183,14 @@ color: white;
   margin-bottom: 0;
   color:#ffb700;
 }
+
+
+
+@media (max-width:1366px) and (min-width:768px) {
+
+  .grid-container{
+    grid-template-columns: 1fr;
+    margin-left: 20%;
+  }
+
+}

@@ -146,10 +146,10 @@
     $('#form-envia').addEventListener("submit", (event) => { event.preventDefault() });
     function envia() {
 
-      let container = $(".row");
+      let container = $(".divContainer");
       let formContainer = $("#div-form");
       formContainer.hidden = true;
-      container.innerHTML =
+      container.innerHTML +=
         `
             <div class="alert alert-success" role="alert">
                 Cadastrado com sucesso!
