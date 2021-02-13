@@ -24,7 +24,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="./index.html">ResiliaFlix</a>
+        <a class="navbar-brand logo" href="../ResiliaFlix-2.0/index.html">ResiliaFlix</a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toogle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -142,30 +142,7 @@
   <script src="./js/models/FilmModel.js"></script>
     <script src="./js/controllers/FilmController.js"></script>
     <script src="./js/views/FilmView.js"></script>
-    <script>
-
-      document.querySelector('#formPesquisa').addEventListener("submit",(event)=>{event.preventDefault()});
-      FilmController.buscaFilme("Twilight");
-      FilmController.buscaFilme("The Avengers");
-      FilmController.buscaFilme("The Croods");
-      FilmController.buscaFilme("Cars 3");
-
-
-      
-      FilmController.buscaFilme("Kill bill");
-      FilmController.buscaFilme("1917");
-      FilmController.buscaFilme("Batman");
-      FilmController.buscaFilme("The Avengers");
-      FilmController.buscaFilme("The Green Mile");
-      FilmController.buscaFilme("The godfather");
-      FilmController.buscaFilme("Mulan");
-      FilmController.buscaFilme("Joker");
-      FilmController.buscaFilme("Fight club");
-      FilmController.buscaFilme("Thor");
-      FilmController.buscaFilme("Pearl Harbor");
-      FilmController.buscaFilme("Forrest Gump");
-
-    </script>
+    <script>FilmController.buscaFilme();</script>
 
 </body>
 
