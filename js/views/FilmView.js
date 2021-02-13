@@ -6,7 +6,7 @@ class FilmView{
         this.container.innerHTML += 
         `
         <div class="film-container">
-        <p class="film-title">${model.title}</p>
+        <p class="film-title">${model.title} <span class="rating">⭐${model.ratings[0].Value}</span></p>
          <img class="film-poster" src=${model.poster} onclick= "FilmController.buscaFilmeImg('${model.title}')">
          </div> 
          `
