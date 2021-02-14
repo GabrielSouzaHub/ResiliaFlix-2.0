@@ -400,7 +400,7 @@ span {
 
 }
 
-@media (max-width:1366px) and (min-width:768px) {
+@media (max-width:1024px) and (min-width:768px) {
 
 
     .btn {
