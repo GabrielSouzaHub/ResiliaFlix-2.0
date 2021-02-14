@@ -9,7 +9,7 @@ body{
 
 }
 
-header{
+.navbar{
   opacity: 0.8;
 }
 
@@ -30,6 +30,20 @@ header{
 .titulo{
   color: white;
   text-align: center;
+}
+.text-color {
+  color: white;
+}
+.title-color {
+  color: #ffb700;
+}
+.btn-modal {
+  background-color: #ffb700;
+  color: black;
+  width: 50%;
+  margin: 3%;
+  font-weight: bold;
+
 }
 .link{
   text-align: center;

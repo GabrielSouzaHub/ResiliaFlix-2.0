@@ -13,33 +13,36 @@ body {
     opacity: 0.8;
 }
 
-.text-color {
-    color: white;
-
-}
-
 .logo {
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
     margin-left: 5%;
 
+
 }
 
-.login {
+.divContainer {
+    max-width: 100%;
+    width: 800px;
+    padding: 0;
+}
+
+.text-color {
+    color: white;
+
+}
+
+.title-color {
+    color: #ffb700;
+}
+
+.cadastro {
     display: flex;
     justify-content: center;
     background-color: white;
     border-radius: 30px;
     box-shadow: 12px 12px 22px grey;
-}
 
-.divContainer {
-    width: 40%;
-    max-width: 800px;
-}
-
-.title-color {
-    color: #ffb700;
 }
 
 .btn-modal {
@@ -203,3 +206,4 @@ a {
         z-index: 1030;
     }
 }
+
