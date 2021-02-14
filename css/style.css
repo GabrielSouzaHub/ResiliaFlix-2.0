@@ -81,8 +81,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 8%;
-    margin-left: 15%;
+    gap: 5%;
+    margin: 0 10%;
 }
 
 .main-content {
@@ -91,16 +91,18 @@
 }
 
 .film-container {
-    margin: 2% 2%;
-    width: 50%;
+    display: grid;
+    margin: 5% auto;
+    width: 100%;
+    align-content: center;
 }
 
 .film-poster {
-    width: 280px;
+    width: 300px;
     height: 400px;
-    padding: 5%;
+    padding: 4%;
     border-radius: 10px;
-    margin-left: 12%;
+    margin: 0 auto;
 }
 
 .film-poster:hover {
@@ -111,12 +113,13 @@
 .film-title {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    align-items: center;
+    width: 100%;
     font-weight: bold;
     color: white;
     font-size: 20px;
-    text-decoration: dashed;
-    margin-left: 15%;
+
+
 }
 
 .border {
@@ -138,6 +141,7 @@
     margin: 0 auto;
     padding: 2%;
     background: #33343c;
+
 }
 
 .info-um {
@@ -167,7 +171,7 @@ span {
     background-color: #ffb700;
     border-radius: 8px;
     padding: 0;
-    width: 30%;
+    width: 25%;
     font-size: 15px;
 }
 
@@ -300,6 +304,7 @@ span {
 
     .grid-container {
         display: flex;
+        flex-direction: column;
         margin: 0 auto;
 
 
@@ -315,15 +320,21 @@ span {
         width: 100%;
     }
 
+    picture {
+        display: flex;
+        margin: 0 auto;
+    }
+
 
     .poster {
-        margin: 0 auto;
-        padding: auto;
-        max-width: 100%;
+        margin: 5% auto;
+        max-width: 90%;
     }
 
     .film-poster {
         margin: 0 auto;
+        width: 80%;
+        height: 50%;
     }
 
     .film-container {
@@ -386,7 +397,7 @@ span {
 
 
 /*footer*/
-@media (max-width:1024px) and (min-width:768px) {
+@media (max-width:1023px) and (min-width:768px) {
     .footer-dark .item:not(.social) {
         text-align: center;
         padding-bottom: 20px;
@@ -403,7 +414,8 @@ span {
 
 }
 
-@media (max-width:1025px) and (min-width:768px) {
+
+@media (max-width:1023px) and (min-width:768px) {
 
     .btn {
         margin-left: 40%;
@@ -414,28 +426,42 @@ span {
 
     }
 
-   
+
     .containers {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        padding: 0;
 
+    }
+
+    picture {
+        display: flex;
+        margin: 0 auto;
     }
 
     .grid-container {
         display: flex;
-        margin: 0 auto;
-    }
-
-    
-    .film-container {
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        margin: 0 auto;
+        gap: 0;
+    }
 
+
+    .film-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 20%;
+        margin: 3% 3% 1% 0;
+    }
+
+    .film-poster {
+        width: 300px;
+        height: 250px;
     }
 
     .info-um {
@@ -459,10 +485,6 @@ span {
         max-width: 100%
     }
 
-    .film-poster {
-        margin: 0 auto;
-    }
-
 
     .film-title {
         text-align: center;
@@ -473,8 +495,8 @@ span {
     }
 
     .rating {
-        margin: 0 auto;
-        width: 25%;
+        margin: 2% auto;
+        width: 50%;
 
     }
 
@@ -493,4 +515,66 @@ span {
         margin: 0 15%;
         padding: 10%;
     }
+}
+
+/* responsividade para galaxy fold*/
+
+@media (max-width:280px) {
+
+    .film-poster {
+        margin: 0 auto;
+        max-width: 80%;
+        height: 250px;
+    }
+
+    
+    .imagem-carousel {
+
+        height: 30vh;
+        object-fit: fill;
+        object-position: 0 15%;
+
+    }
+}
+
+/* responsividade ipad pro*/
+
+@media (max-width:1025px) and (min-width:1024px) {
+
+
+    .containers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .input {
+        width: 400px;
+        margin-left: 30%;
+        border-radius: 15px;
+    }
+
+
+    .imagem-carousel {
+
+        height: 40vh;
+        object-fit: cover;
+        object-position: 0 15%;
+
+    }
+
+    .btn {
+        margin-left: 20%;
+        color: white;
+
+    }
+
+    .rating {
+        margin: 0 auto;
+        width: 15%;
+
+    }
+
 }
