@@ -81,8 +81,8 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 8%;
-    margin-left: 15%;
+    gap: 5%;
+    margin: 0 10%;
 }
 
 .main-content {
@@ -91,16 +91,18 @@
 }
 
 .film-container {
-    margin: 2% 2%;
-    width: 50%;
+    display: grid;
+    margin: 5% auto;
+    width: 100%;
+    align-content: center;
 }
 
 .film-poster {
-    width: 280px;
+    width: 300px;
     height: 400px;
-    padding: 5%;
+    padding: 4%;
     border-radius: 10px;
-    margin-left: 12%;
+    margin: 0 auto;
 }
 
 .film-poster:hover {
@@ -111,12 +113,13 @@
 .film-title {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    align-items: center;
+    width: 100%;
     font-weight: bold;
     color: white;
     font-size: 20px;
-    text-decoration: dashed;
-    margin-left: 15%;
+
+
 }
 
 .border {
@@ -138,6 +141,7 @@
     margin: 0 auto;
     padding: 2%;
     background: #33343c;
+
 }
 
 .info-um {
@@ -162,12 +166,12 @@ span {
     font-weight: bold;
 }
 
-.rating{
+.rating {
     color: black;
     background-color: #ffb700;
-    border-radius:8px;
+    border-radius: 8px;
     padding: 0;
-    width: 30%;
+    width: 25%;
     font-size: 15px;
 }
 
@@ -278,7 +282,7 @@ span {
 
 /* Responsive celular*/
 
-@media (max-width:767px)  {
+@media (max-width:767px) {
 
 
     .btn {
@@ -291,16 +295,19 @@ span {
     }
 
     .containers {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
 
     }
 
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+
     }
 
     .info-um {
@@ -313,34 +320,41 @@ span {
         width: 100%;
     }
 
+    picture {
+        display: flex;
+        margin: 0 auto;
+    }
+
 
     .poster {
-        margin: 0 auto;
-        padding: auto;
-        max-width: 100%;
+        margin: 5% auto;
+        max-width: 90%;
     }
 
     .film-poster {
-        margin: 0 0 0 15%;
+        margin: 0 auto;
+        width: 80%;
+        height: 50%;
     }
 
     .film-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 90%;
-       
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+
     }
 
     .film-title {
         font-size: 20px;
-        width: 70%;
-        margin-left:20%;
-        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .rating{
-        margin-left: 1%;
-        width: 30%;
+    .rating {
+        margin: 0 auto;
     }
 
     .imagem-carousel {
@@ -351,7 +365,7 @@ span {
 
     }
 
-    .picture-erro{
+    .picture-erro {
         display: flex;
         width: 380px;
         margin: 0 auto;
@@ -383,7 +397,7 @@ span {
 
 
 /*footer*/
-@media (max-width:1024px) and (min-width:768px) {
+@media (max-width:1023px) and (min-width:768px) {
     .footer-dark .item:not(.social) {
         text-align: center;
         padding-bottom: 20px;
@@ -400,8 +414,8 @@ span {
 
 }
 
-@media (max-width:1366px) and (min-width:768px) {
 
+@media (max-width:1023px) and (min-width:768px) {
 
     .btn {
         margin-left: 40%;
@@ -412,19 +426,42 @@ span {
 
     }
 
+
     .containers {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        border: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
         padding: 0;
 
     }
 
+    picture {
+        display: flex;
+        margin: 0 auto;
+    }
+
     .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1%;
-        margin: 5% auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 0;
+    }
+
+
+    .film-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        width: 20%;
+        margin: 3% 3% 1% 0;
+    }
+
+    .film-poster {
+        width: 300px;
+        height: 250px;
     }
 
     .info-um {
@@ -437,39 +474,29 @@ span {
         width: 100%;
     }
 
-    picture{
-        margin:0 auto;
+    picture {
+        margin: 0 auto;
     }
 
 
     .poster {
-        margin: 0 0 0 70%;
+        margin: 0 auto;
         padding: auto;
         max-width: 100%
     }
 
-    .film-poster {
-        margin: 0 0 0 12%;
-    }
-
-    .film-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 90%;
-        flex-direction: column;
-       
-    }
 
     .film-title {
         text-align: center;
         font-size: 20px;
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        margin: 0 auto;
+
     }
 
     .rating {
-        margin-left: 38%;
-        width: 25%;
+        margin: 2% auto;
+        width: 50%;
 
     }
 
@@ -481,11 +508,73 @@ span {
 
     }
 
-    .picture-erro{
+    .picture-erro {
         display: flex;
         width: 600px;
         height: 600px;
         margin: 0 15%;
-        padding:10%;
+        padding: 10%;
     }
+}
+
+/* responsividade para galaxy fold*/
+
+@media (max-width:280px) {
+
+    .film-poster {
+        margin: 0 auto;
+        max-width: 80%;
+        height: 250px;
+    }
+
+    
+    .imagem-carousel {
+
+        height: 30vh;
+        object-fit: fill;
+        object-position: 0 15%;
+
+    }
+}
+
+/* responsividade ipad pro*/
+
+@media (max-width:1025px) and (min-width:1024px) {
+
+
+    .containers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .input {
+        width: 400px;
+        margin-left: 30%;
+        border-radius: 15px;
+    }
+
+
+    .imagem-carousel {
+
+        height: 40vh;
+        object-fit: cover;
+        object-position: 0 15%;
+
+    }
+
+    .btn {
+        margin-left: 20%;
+        color: white;
+
+    }
+
+    .rating {
+        margin: 0 auto;
+        width: 15%;
+
+    }
+
 }

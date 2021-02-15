@@ -9,7 +9,7 @@ body {
     background-image: url("fundoLogin.png");
 }
 
-header {
+.navbar {
     opacity: 0.8;
 }
 
@@ -197,3 +197,4 @@ a {
         width: 100%;
     }
 }
+
