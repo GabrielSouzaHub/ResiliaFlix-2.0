@@ -59,20 +59,22 @@
 
 }
 
-.img-carousel-1 {
+.imagem-carousel-1 {
+    height: 83vh;
     object-fit: cover;
-    object-position: 0 20%;
-    height: 800px;
+    object-position: 5% 15%;
 }
 
-.img-carousel-2 {
+.imagem-carousel-2 {
+    height: 83vh;
     object-fit: cover;
-    height: 800px;
+    object-position: 0 55%;
 }
 
-.img-carousel-3 {
+.imagem-carousel-3 {
+    height: 83vh;
     object-fit: cover;
-    height: 800px;
+    object-position: 0 25%;
 }
 
 
@@ -171,7 +173,7 @@ span {
     background-color: #ffb700;
     border-radius: 8px;
     padding: 0;
-    width: 25%;
+    width: 22%;
     font-size: 15px;
 }
 
@@ -357,13 +359,30 @@ span {
         margin: 0 auto;
     }
 
-    .imagem-carousel {
+    .imagem-carousel-1  {
 
-        height: 40vh;
+        height: 38vh;
         object-fit: fill;
         object-position: 0 15%;
 
     }
+
+    .imagem-carousel-2  {
+
+        height: 38vh;
+        object-fit: fill;
+        object-position: 0 15%;
+
+    }
+
+    .imagem-carousel-3  {
+
+        height: 38vh;
+        object-fit: fill;
+        object-position: 0 15%;
+
+    }
+
 
     .picture-erro {
         display: flex;
