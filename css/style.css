@@ -12,13 +12,7 @@
 
 /*navbar*/
 
-.logo {
-    font-size: 28px;
-    font-family: 'Fredoka One', cursive;
-    margin-left: 5%;
-    color: #ffb700;
 
-}
 
 .btn-search {
     border: none;
@@ -33,13 +27,19 @@
 }
 
 .input {
-    width: 500px;
-    margin-left: 40%;
+    width: 450px;
+    margin-left: 30%;
     border-radius: 15px;
 }
 
+.font{
+    font-size: 16px;
+    font-weight: normal;
+    
+}
+
 .btn {
-    margin-left: 40%;
+    margin-left: 20%;
     color: white;
 
 }
@@ -56,25 +56,48 @@
     height: 83vh;
     object-fit: cover;
     object-position: 0 15%;
+    cursor: pointer;
 
+
+}
+
+.logo{
+margin-left: 5%;
+}
+
+.logo-img{
+    display:flex;
+    width: 220px;
+    margin: auto  20%;
 }
 
 .imagem-carousel-1 {
     height: 83vh;
+    max-width: 100%;
     object-fit: cover;
-    object-position: 5% 15%;
+    object-position: 50% 15%;
+    cursor: pointer;
+
 }
 
 .imagem-carousel-2 {
     height: 83vh;
-    object-fit: cover;
-    object-position: 0 55%;
+    object-fit:cover;
+    object-position: 80% 55%;
+    max-width: 100%;
+    cursor: pointer;
+
+
 }
 
 .imagem-carousel-3 {
     height: 83vh;
     object-fit: cover;
     object-position: 0 25%;
+    max-width: 100%;
+    cursor: pointer;
+
+
 }
 
 
@@ -105,6 +128,7 @@
     padding: 4%;
     border-radius: 10px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .film-poster:hover {
@@ -173,7 +197,7 @@ span {
     background-color: #ffb700;
     border-radius: 8px;
     padding: 0;
-    width: 22%;
+    width: 23%;
     font-size: 15px;
 }
 
@@ -303,6 +327,17 @@ span {
         width: 100%;
 
     }
+    .logo {
+        margin:0;
+    }
+
+    .logo-img{
+        display:flex;
+        width: 150px;
+        margin:auto;
+        padding: 0;
+
+    }
 
     .grid-container {
         display: flex;
@@ -371,15 +406,15 @@ span {
 
         height: 38vh;
         object-fit: fill;
-        object-position: 0 15%;
+        object-position: 90% 15%;
 
     }
 
     .imagem-carousel-3  {
 
         height: 38vh;
-        object-fit: fill;
-        object-position: 0 15%;
+        object-fit: cover;
+        object-position: 15% 15%;
 
     }
 

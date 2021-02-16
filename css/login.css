@@ -25,6 +25,12 @@ body {
 
 }
 
+.logo-img{
+    display:flex;
+    width: 250px;
+    margin: 0;
+}
+
 .login {
     display: flex;
     justify-content: center;
