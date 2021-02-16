@@ -8,7 +8,7 @@ class FilmController {
     }
     static paginaPesquisa(){
         localStorage.setItem('meuFilme', document.getElementById("filmName").value);
-        location.href="./pages/pesquisa/pesquisa.html";
+        location.href="./pages/Pesquisa/pesquisa.html";
     }
     static pegaFilme(){
         localStorage.setItem('meuFilme', document.getElementById("filmName").value);
@@ -20,7 +20,7 @@ class FilmController {
     }
     static buscaFilmeImg(filme){
         localStorage.setItem('meuFilme', filme);
-        location.href="./../../pages/Pesquisa/pesquisa.html";
+        location.href="./pages/Pesquisa/pesquisa.html";
     }
 
 }
