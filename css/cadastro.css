@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-    background-image: url("fundoLogin.png");
+    background-image: url("./../img/fundoLogin.png");
 }
 
 .navbar {
@@ -195,15 +195,6 @@ a {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-    }
-}
-@media (min-height: 930px) {
-    .footer-dark {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 1030;
     }
 }
 

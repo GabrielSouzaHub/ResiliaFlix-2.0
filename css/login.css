@@ -6,25 +6,11 @@
 
 body {
     background-color: black;
-    background-image: url("fundoLogin.png");
+    background-image: url("./../img/fundoLogin.png");
 }
 
 .navbar {
     opacity: 0.8;
-}
-
-.logo {
-    font-size: 28px;
-    font-family: 'Fredoka One', cursive;
-    margin-left: 5%;
-
-
-}
-
-.divContainer {
-    max-width: 100%;
-    width: 800px;
-    padding: 0;
 }
 
 .text-color {
@@ -32,17 +18,28 @@ body {
 
 }
 
-.title-color {
-    color: #ffb700;
+.logo {
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 5%;
+
 }
 
-.cadastro {
+.login {
     display: flex;
     justify-content: center;
     background-color: white;
     border-radius: 30px;
     box-shadow: 12px 12px 22px grey;
+}
 
+.divContainer {
+    width: 40%;
+    max-width: 800px;
+}
+
+.title-color {
+    color: #ffb700;
 }
 
 .btn-modal {
@@ -197,4 +194,12 @@ a {
         width: 100%;
     }
 }
-
+@media (min-height: 930px) {
+    .footer-dark {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
