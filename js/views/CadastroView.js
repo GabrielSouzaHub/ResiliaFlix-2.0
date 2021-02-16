@@ -14,19 +14,19 @@ class CadastroView {
     confirmaSenha() {
         this.container.innerHTML +=
             `
-        <div class="alert alert-success" role="alert">
-            Um email será enviado com instruções!
-        </div>
-        `
+            <div class="alert alert-success" role="alert">
+                Um email será enviado com instruções!
+            </div>
+            `
         setTimeout(() => location.href = "../index.html", 3500);
     }
     confirmaLogin() {
         this.container.innerHTML +=
             `
-        <div class="alert alert-success" role="alert">
-            Login realizado com sucesso!
-        </div>
-        `
+            <div class="alert alert-success" role="alert">
+                Login realizado com sucesso!
+            </div>
+            `
         setTimeout(() => location.href = "../index.html", 3500);
     }
 }
