@@ -20,7 +20,7 @@ class FilmController {
     }
     static buscaFilmeImg(filme){
         localStorage.setItem('meuFilme', filme);
-        location.href="./pages/pesquisa/pesquisa.html";
+        location.href="./../../pages/Pesquisa/pesquisa.html";
     }
 
 }
