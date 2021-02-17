@@ -1,6 +1,7 @@
 class CadastroView {
     constructor() {
         this.container = document.querySelector("#container-form");
+        this.containerContato = document.querySelector("#container-contato");
     }
     confirmaCadastro() {
         this.container.innerHTML +=
@@ -39,5 +40,14 @@ class CadastroView {
             </div>
             `
         setTimeout(() => location.href = "../../index.html", 3500);
+    }
+    confirmaContato() {
+        this.containerContato.innerHTML +=
+            `
+            <div class="alert alert-success" role="alert">
+                Mensagem enviada com sucesso!
+            </div>
+            `
+        setTimeout(() => window.location.reload(), 3500);
     }
 }
