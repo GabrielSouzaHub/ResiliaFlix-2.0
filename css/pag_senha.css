@@ -13,6 +13,12 @@ body {
     opacity: 0.8;
 }
 
+.logo-img{
+    display:flex;
+    width: 250px;
+    margin: 0;
+}
+
 .logo {
     font-size: 28px;
     font-family: 'Fredoka One', cursive;
@@ -36,11 +42,11 @@ body {
     color: #ffb700;
 }
 
-.cadastro {
+.pag-senha {
     display: flex;
     justify-content: center;
     background-color: white;
-    border-radius: 30px;
+    /* border-radius: 30px; */
     box-shadow: 12px 12px 22px grey;
 
 }

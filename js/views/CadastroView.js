@@ -11,6 +11,17 @@ class CadastroView {
             `
         setTimeout(() => location.href = "../../index.html", 3500);
     }
+    static validaSenha() {
+        if(document.getElementById("senha").value!=document.getElementById("confirma").value){
+            document.getElementById("confirma").setCustomValidity("Senhas Diferentes");
+               
+        }
+        else{
+            document.getElementById("confirma").setCustomValidity("");
+            
+        }  
+       
+    }
     confirmaSenha() {
         this.container.innerHTML +=
             `

@@ -1,18 +1,20 @@
-class FilmView{
-    constructor(){
+class FilmView {
+    constructor() {
         this.container = document.querySelector(".containers");
+        this.containerSearch = document.querySelector(".content");
+
     }
-    update(model){
-        this.container.innerHTML += 
-        `
+    update(model) {
+        this.container.innerHTML +=
+            `
         <div class="film-container">
         <p class="film-title">${model.title} <span class="rating">⭐${model.ratings[0].Value}</span></p>
          <img class="film-poster" src=${model.poster} onclick= "FilmController.buscaFilmeImg('${model.title}')">
          </div> 
          `
     }
+
     updatePesquisa(model){
-        console.log(model);
         try{
             if(model.title===undefined) throw `<img class="picture-erro" src=../../img/404.jpg>`;
             let ratings =``;
@@ -57,10 +59,9 @@ class FilmView{
         </div>
         </div>
          `
-        }
-        catch(e){
-            this.container.innerHTML = 
-            `
+        } catch (e) {
+            this.container.innerHTML =
+                `
             ${e}
             `
         }

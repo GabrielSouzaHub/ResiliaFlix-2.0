@@ -12,13 +12,7 @@
 
 /*navbar*/
 
-.logo {
-    font-size: 28px;
-    font-family: 'Fredoka One', cursive;
-    margin-left: 5%;
-    color: #ffb700;
 
-}
 
 .btn-search {
     border: none;
@@ -33,20 +27,34 @@
 }
 
 .input {
-    width: 500px;
-    margin-left: 40%;
+    width: 450px;
+    margin-left: 30%;
     border-radius: 15px;
 }
 
+.font {
+    font-size: 16px;
+    font-weight: normal;
+
+}
+
 .btn {
-    margin-left: 40%;
+    margin-left: 20%;
     color: white;
+
+}
+
+.content {
+    background: #33343c;
+    align-content: space-around;
+
 
 }
 
 .item {
     justify-content: flex-end;
 }
+
 
 
 /* Carrossel*/
@@ -56,25 +64,53 @@
     height: 83vh;
     object-fit: cover;
     object-position: 0 15%;
+    cursor: pointer;
 
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.logo-img {
+    display: flex;
+    width: 220px;
+    margin: 5% 20%;
 }
 
 .imagem-carousel-1 {
     height: 83vh;
+    max-width: 100%;
     object-fit: cover;
-    object-position: 5% 15%;
+    object-position: 50% 15%;
+    cursor: pointer;
+
 }
 
 .imagem-carousel-2 {
     height: 83vh;
     object-fit: cover;
-    object-position: 0 55%;
+    object-position: 80% 55%;
+    max-width: 100%;
+    cursor: pointer;
+
+
 }
 
 .imagem-carousel-3 {
     height: 83vh;
     object-fit: cover;
     object-position: 0 25%;
+    max-width: 100%;
+    cursor: pointer;
+
+
 }
 
 
@@ -83,8 +119,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5%;
-    margin: 0 10%;
+    gap: 3%;
+    margin: 0 auto;
+    justify-items: center;
+
 }
 
 .main-content {
@@ -105,6 +143,7 @@
     padding: 4%;
     border-radius: 10px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .film-poster:hover {
@@ -173,7 +212,7 @@ span {
     background-color: #ffb700;
     border-radius: 8px;
     padding: 0;
-    width: 22%;
+    width: 70px;
     font-size: 15px;
 }
 
@@ -304,6 +343,22 @@ span {
 
     }
 
+    .logo {
+        margin: 0 30% 0 0;
+    }
+
+
+
+    .logo-img {
+        display: flex;
+        width: 150px;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
+
+
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -359,7 +414,7 @@ span {
         margin: 0 auto;
     }
 
-    .imagem-carousel-1  {
+    .imagem-carousel-1 {
 
         height: 38vh;
         object-fit: fill;
@@ -367,19 +422,19 @@ span {
 
     }
 
-    .imagem-carousel-2  {
+    .imagem-carousel-2 {
 
         height: 38vh;
         object-fit: fill;
-        object-position: 0 15%;
+        object-position: 90% 15%;
 
     }
 
-    .imagem-carousel-3  {
+    .imagem-carousel-3 {
 
         height: 38vh;
         object-fit: fill;
-        object-position: 0 15%;
+        object-position: 15% 15%;
 
     }
 
@@ -508,8 +563,8 @@ span {
     .film-title {
         text-align: center;
         font-size: 20px;
-        width: 100%;
-        margin: 0 auto;
+        width: 200px;
+        margin: 0 0;
 
     }
 
@@ -519,13 +574,31 @@ span {
 
     }
 
-    .imagem-carousel {
+    .imagem-carousel-1 {
 
-        height: 40vh;
+        height: 38vh;
         object-fit: fill;
         object-position: 0 15%;
 
     }
+
+    .imagem-carousel-2 {
+
+        height: 38vh;
+        object-fit: fill;
+        object-position: 90% 15%;
+
+    }
+
+    .imagem-carousel-3 {
+
+        height: 38vh;
+        object-fit: fill;
+        object-position: 15% 15%;
+
+    }
+
+
 
     .picture-erro {
         display: flex;
@@ -534,6 +607,21 @@ span {
         margin: 0 15%;
         padding: 10%;
     }
+
+    .logo {
+        margin: 0 50% 0 0;
+    }
+
+
+
+    .logo-img {
+        display: flex;
+        width: 150px;
+        padding: 0;
+        margin-left: 0;
+
+    }
+
 }
 
 /* responsividade para galaxy fold*/
@@ -546,13 +634,32 @@ span {
         height: 250px;
     }
 
-    
-    .imagem-carousel {
+    .imagem-carousel-1 {
 
-        height: 30vh;
+        height: 35vh;
         object-fit: fill;
         object-position: 0 15%;
 
+    }
+
+    .imagem-carousel-2 {
+
+        height: 35vh;
+        object-fit: fill;
+        object-position: 90% 15%;
+
+    }
+
+    .imagem-carousel-3 {
+
+        height: 35vh;
+        object-fit: cover;
+        object-position: 15% 15%;
+
+    }
+
+    .logo {
+        margin: 0 20% 0 0;
     }
 }
 
@@ -575,12 +682,27 @@ span {
         border-radius: 15px;
     }
 
+    .imagem-carousel-1 {
 
-    .imagem-carousel {
-
-        height: 40vh;
-        object-fit: cover;
+        height: 38vh;
+        object-fit: fill;
         object-position: 0 15%;
+
+    }
+
+    .imagem-carousel-2 {
+
+        height: 38vh;
+        object-fit: fill;
+        object-position: 90% 15%;
+
+    }
+
+    .imagem-carousel-3 {
+
+        height: 38vh;
+        object-fit: cover;
+        object-position: 15% 15%;
 
     }
 
@@ -595,5 +717,21 @@ span {
         width: 15%;
 
     }
+
+    
+    .logo {
+        margin: 0 5% 0 0;
+    }
+
+    .input{
+        margin: 0 0 0 15%;
+    }
+
+    .btn{
+        margin: 0;
+    }
+
+
+
 
 }

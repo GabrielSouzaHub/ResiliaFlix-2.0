@@ -25,6 +25,12 @@ body {
 
 }
 
+.logo-img{
+    display:flex;
+    width: 250px;
+    margin: 0;
+}
+
 .login {
     display: flex;
     justify-content: center;
@@ -76,6 +82,15 @@ a {
     .container {
         width: 100%;
     }
+
+    .logo{
+        display:flex;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+
+
 }
 
 .footer-dark {

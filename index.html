@@ -23,10 +23,9 @@
   <header>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-      <div class="container-fluid">
-        <a class="navbar-brand logo" href="../ResiliaFlix-2.0/index.html">
-          <ResiliaFlix class="title-color">ResiliaFlix</span>
-           
+      <div class="container-fluid justify-content-center">
+        <a class="navbar-brand logo" href="index.html"> <img class="logo-img" src="img/logo_resilia_flix.png"
+            alt="">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -40,18 +39,18 @@
             <input class="form-control me-2 input" type="search" placeholder="Search" aria-label="Search" id="filmName">
             <button class="btn btn-outline-success btn-search m-0" type="submit"
               onclick="FilmController.paginaPesquisa()">
-              <i class="material-icons">search</i></button>
+              <i class="material-icons title-color">search</i></button>
           </form>
 
           <section class="d-flex collapse navbar-collapse ">
             <ul class="navbar-nav me-auto mb-3 mb-lg-0 btn">
               <li class="nav-item">
                 <a class="nav-link active border p-2 m-3 " aria-current="page" href="./pages/Login/login.html"><i
-                    class="material-icons">person</i><span class="">Login</span></a>
+                    class="material-icons title-color">person</i><span class="font">Login</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active border p-2 m-3 " href="./pages/Cadastro/cadastro.html"><i
-                    class="material-icons">lock</i><span class="">Cadastro</span></a>
+                    class="material-icons title-color">lock</i><span class="font">Cadastro</span></a>
               </li>
             </ul>
           </section>
@@ -72,11 +71,13 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100 imagem-carousel-1" src="https://whosthanny.com/wp-content/uploads/2015/05/mad-max-capa.jpg" alt="Primeiro Slide"
+          <img class="d-block w-100 imagem-carousel-1"
+            src="https://whosthanny.com/wp-content/uploads/2015/05/mad-max-capa.jpg" alt="Primeiro Slide"
             onclick="FilmController.buscaFilmeImg('Mad Max: Fury Road')">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100 imagem-carousel-2" src="https://lumiere-a.akamaihd.net/v1/images/sw_header_r_c92be51e.jpeg?region=0,0,1920,983&width=960"
+          <img class="d-block w-100 imagem-carousel-2"
+            src="https://lumiere-a.akamaihd.net/v1/images/sw_header_r_c92be51e.jpeg?region=0,0,1920,983&width=960"
             alt="Segundo Slide" onclick="FilmController.buscaFilmeImg('Star Wars: Episode IX - The Rise of Skywalker')">
         </div>
         <div class="carousel-item">
@@ -118,13 +119,15 @@
         <div class="col-md-3 col-sm-12 item justify-content-center">
           <h3>Projeto</h3>
           <ul>
-            <li><a href="#">Especificações</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-contato-2">Especificações</a></li>
           </ul>
         </div>
 
         <div class="col-md-6 item text">
           <h3>ResiliaFlix</h3>
-          <p>O ResiliaFlix é um projeto estudantil que possui o objetivo de buscar informações sobre filmes, tais como, diretor, avaliações, bilheteria e elenco. Neste projeto há a utilização de HTML, CSS, Bootstrap, Javascript.</p>
+          <p>O ResiliaFlix é um projeto estudantil que possui o objetivo de buscar informações sobre filmes, tais como,
+            diretor, avaliações, bilheteria e elenco. Neste projeto há a utilização de HTML, CSS, Bootstrap, Javascript.
+          </p>
         </div>
 
         <section class="col item social">
@@ -186,13 +189,60 @@
       </dialog>
     </main>
   </div>
+
+
+  <!-- Modal especificações -->
+  <div class="modal fade" id="modal-contato-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <main class="modal-dialog bg-dark">
+
+      <dialog class="modal-content">
+
+        <header class="modal-header bg-dark">
+          <h5 class="modal-title title-color" id="exampleModalLabel">Especificações do projeto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+
+        <div class="modal-body  bg-dark">
+
+          <section class="texto-modal">
+            <p class="text-color"> Projeto realizado com intuito de aplicar todas as ferramentas e tecnologias
+              aprendidas durante o curso de desenvolvimento full-stack [modulo 1] da instituição Resilia Educação +
+              Stone, tais como:</p>
+            <ul>
+              <li class="text-color">HTML</li>
+              <li class="text-color">CSS</li>
+              <li class="text-color">Javascript</li>
+              <li class="text-color">Bootstrap</li>
+            </ul>
+
+
+            <p class="text-color">Patrocinadores: </p>
+            <img class="logo-img" src="img/logoresilia.jpg"></img>
+            <img class="logo-img"
+              src="https://seeklogo.com/images/S/stone-pagamentos-logo-781DFFF629-seeklogo.com.png"></img>
+            <img class="logo-img" src="https://blog.provi.com.br/wp-content/themes/provi/assets/images/logo.png"></img>
+
+
+
+          </section>
+
+        </div>
+
+        <footer class="modal-footer bg-dark ">
+
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">Fechar</button>
+
+        </footer>
+      </dialog>
+    </main>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
   <script src="./js/models/FilmModel.js"></script>
-    <script src="./js/controllers/FilmController.js"></script>
-    <script src="./js/views/FilmView.js"></script>
-    <script>FilmController.buscaFilme();</script>
+  <script src="./js/controllers/FilmController.js"></script>
+  <script src="./js/views/FilmView.js"></script>
+  <script>FilmController.buscaFilme();</script>
 </body>
 
 </html>
