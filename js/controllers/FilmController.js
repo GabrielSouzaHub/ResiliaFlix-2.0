@@ -1,6 +1,6 @@
 class FilmController {
     static buscaFilme(){
-        let arrayFilmes = ["Les Misérables","Monster House","The Fox and the Hound","Twilight","Pearl Harbor","Avengers: Endgame","City of god","The Karate Kid","The wolf of wall street","Django Unchained","Inglourious basterds","A marriage story","Police academy","1917","Pacific Rim","Cars 3"];
+        let arrayFilmes = ["Les Misérables","Monster House","Joker","Twilight","Pearl Harbor","Avengers: Endgame","City of god","The Karate Kid","1984","Django Unchained","Inglourious basterds","marriage story","Police academy","1917","Pacific Rim","Cars 3"];
         for(let filme of arrayFilmes){
             let model = new FilmModel();
             model.fazRequest(filme,() => {let view = new FilmView(); view.update(model)});
