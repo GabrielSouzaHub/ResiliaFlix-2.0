@@ -13,15 +13,39 @@ class FilmView {
          </div> 
          `
     }
+<<<<<<< HEAD
     updatePesquisa(model) {
         try {
             if (model.title === undefined) throw `<img class="picture-erro" src=../../../ResiliaFlix-2.0/img/404.jpg>`
             this.containerSearch.innerHTML =
                 `
+=======
+
+    updatePesquisa(model){
+        try{
+            if(model.title===undefined) throw `<img class="picture-erro" src=../../img/404.jpg>`;
+            let ratings =``;
+            if(model.ratings.length == 1){
+                ratings = `<p class="text"><span>IMDB:</span> ${model.ratings[0].Value}</p>`;
+            }
+            if(model.ratings.length == 2){
+                ratings = `
+                <p class="text"><span>IMDB:</span> ${model.ratings[0].Value}</p>
+                <p class="text"><span>Rotten Tomatoes:</span> ${model.ratings[1].Value}</p>`;
+            }
+            if(model.ratings.length == 3){
+                ratings = `
+                <p class="text"><span>IMDB:</span> ${model.ratings[0].Value}</p>
+                <p class="text"><span>Rotten Tomatoes:</span> ${model.ratings[1].Value}</p>
+                <p class="text"><span>Metacritic:</span> ${model.ratings[2].Value}</p>`;
+            }
+        this.container.innerHTML =
+        `
+>>>>>>> 7d4aaedd2a628fe6f298ab8aa43240a64d893522
 
         <div class="grid-container">
-        <picture class="photo">
-        <img class="poster" src=${model.poster}>
+        <picture>
+        <img class="poster" src=${model.poster} alt="Imagem não encontrada">
         </picture>
         <div class="info-um">
         <p class="text"><span>Titulo:</span> ${model.title}</p>
@@ -39,9 +63,7 @@ class FilmView {
         <p class="text"><span>Prêmios:</span> ${model.awards}</p>
         <p class="text"><span>Bilheteria:</span> ${model.boxOffice}</p>
         <p class="text"><span>Produtora:</span> ${model.production}</p>
-        <p class="text"><span>IMDB:</span> ${model.ratings[0].Value}</p>
-        <p class="text"><span>Rotten Tomatoes:</span> ${model.ratings[1].Value}</p>
-        <p class="text"><span>Metacritic:</span> ${model.ratings[2].Value}</p>
+        ${ratings}
         </div>
         </div>
          `

@@ -2,6 +2,7 @@ class CadastroController {
     static enviaCadastro() {
         let view = new CadastroView();
         view.confirmaCadastro();
+
     }
     static enviaSenha() {
         let view = new CadastroView();

@@ -1,6 +1,7 @@
 class CepView{
     constructor(){
         var $ = document.querySelector.bind(document);
+        this.cep = $("#CEP");
         this.inputEndereco = $("#endereco");
         this.inputBairro = $("#bairro");
         this.inputCidade = $("#cidade");
@@ -9,9 +10,9 @@ class CepView{
     }
     update(model){
         try{
-            if(model.endereco == undefined)  throw "CEP Não Encontrado";
+            if(model.endereco == undefined)  this.cep.setCustomValidity("CEP Não Encontrado");
             else{
-                this.alert.hidden = true;
+                this.cep.setCustomValidity("");
                 this.inputEndereco.value = model.endereco;
                 this.inputBairro.value = model.bairro;
                 this.inputCidade.value = model.cidade;
@@ -19,12 +20,12 @@ class CepView{
             }
         }
         catch(e){
-            this.alert.innerHTML = e;
-            this.alert.hidden = false;
+            
             this.inputEndereco.value = "";
             this.inputBairro.value = "";
             this.inputCidade.value = "";
             this.inputEstado.value = "";
+           
         }
     }
 }
