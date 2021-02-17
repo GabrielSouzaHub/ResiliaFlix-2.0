@@ -68,7 +68,7 @@ margin-left: 5%;
 .logo-img{
     display:flex;
     width: 220px;
-    margin: auto  20%;
+    margin: 5%  20%;
 }
 
 .imagem-carousel-1 {
@@ -331,6 +331,8 @@ span {
         margin:0;
     }
 
+    
+
     .logo-img{
         display:flex;
         width: 150px;
@@ -338,6 +340,8 @@ span {
         padding: 0;
 
     }
+
+    
 
     .grid-container {
         display: flex;
