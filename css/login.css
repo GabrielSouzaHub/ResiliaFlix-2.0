@@ -81,6 +81,15 @@ a {
     .container {
         width: 100%;
     }
+
+    .logo{
+        display:flex;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+
+
 }
 
 .footer-dark {

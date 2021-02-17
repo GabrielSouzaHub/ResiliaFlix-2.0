@@ -21,6 +21,8 @@ body {
   height: 550px;
   margin: 5%;
   text-align: center;
+  align-content: center;
+
 }
 
 .titulo {
@@ -106,7 +108,8 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 0 0 10%;
+  justify-items: center;
+  margin:0 auto;
 }
 
 
@@ -206,7 +209,7 @@ body {
 
   .cards {
     width: 95%;
-    height: 460px;
+    height: 500px;
     margin: 6% auto;
   }
 
