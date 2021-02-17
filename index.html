@@ -158,34 +158,33 @@
           <h5 class="modal-title title-color" id="exampleModalLabel">Contate-nos</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </header>
-
-        <div class="modal-body  bg-dark">
-
+        <form id="formContato-envia" onsubmit="CadastroController.enviaContato()">
+        <div id="container-contato" class="modal-body  bg-dark">
           <section class="mb-3">
             <label for="formGroupExampleInput" class="form-label text-color">Nome completo</label>
-            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="insira seu nome completo">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="insira seu nome completo" required>
           </section>
 
           <section class="mb-3">
             <label for="exampleFormControlInput1" class="form-label text-color">Endereço de email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" required>
           </section>
 
           <section class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label text-color">Deixe seu comentário</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              placeholder="insira aqui seu comentário"></textarea>
+              placeholder="insira aqui seu comentário" required></textarea>
           </section>
-
         </div>
-
+        
         <footer class="modal-footer bg-dark ">
-
-          <button type="button" class="btn btn-secondary btn-modal">Enviar</button>
-
+          
+          <button type="submit" class="btn btn-secondary btn-modal">Enviar</button>
+          
           <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">Fechar</button>
-
+          
         </footer>
+      </form>
       </dialog>
     </main>
   </div>
@@ -241,7 +240,9 @@
     crossorigin="anonymous"></script>
   <script src="./js/models/FilmModel.js"></script>
   <script src="./js/controllers/FilmController.js"></script>
+  <script src="./js/controllers/CadastroController.js"></script>
   <script src="./js/views/FilmView.js"></script>
+  <script src="./js/views/CadastroView.js"></script>
   <script>FilmController.buscaFilme();</script>
 </body>
 

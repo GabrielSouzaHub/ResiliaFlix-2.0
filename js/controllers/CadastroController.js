@@ -11,6 +11,11 @@ class CadastroController {
         let view = new CadastroView();
         view.confirmaLogin();
     }
+    static enviaContato() {
+        let view = new CadastroView();
+        view.confirmaContato();
+    }
 }
 let $ = document.querySelector.bind(document);
+$("#formContato-envia").addEventListener("submit",(e)=> e.preventDefault());
 $("#form-envia").addEventListener("submit",(e)=> e.preventDefault());
