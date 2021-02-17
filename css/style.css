@@ -12,8 +12,6 @@
 
 /*navbar*/
 
-
-
 .btn-search {
     border: none;
     color: white;
@@ -35,6 +33,10 @@
 .font {
     font-size: 16px;
     font-weight: normal;
+}
+
+.font:hover {
+    color: #ffb700;
 
 }
 
@@ -242,7 +244,7 @@ span {
 /* pagina de err*/
 
 .picture-erro {
-    margin: 2% 0 2% 40%;
+    margin: 0 auto 5% auto;
 }
 
 /* Footer*/
@@ -441,7 +443,7 @@ span {
 
     .picture-erro {
         display: flex;
-        width: 380px;
+        width: 300px;
         margin: 0 auto;
     }
 }

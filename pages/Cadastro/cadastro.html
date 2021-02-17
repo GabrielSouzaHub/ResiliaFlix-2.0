@@ -114,7 +114,7 @@
         <div class="col-md-3 col-sm-12 item justify-content-center">
           <h3>Projeto</h3>
           <ul>
-            <li><a href="#">Especificações</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal-contato-2">Especificações</a></li></ul>
           </ul>
         </div>
 
@@ -182,6 +182,54 @@
       </dialog>
     </main>
   </div>
+         
+  <!-- Modal especificações -->
+  <div class="modal fade" id="modal-contato-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <main class="modal-dialog bg-dark">
+
+      <dialog class="modal-content">
+
+        <header class="modal-header bg-dark">
+          <h5 class="modal-title title-color" id="exampleModalLabel">Especificações do projeto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </header>
+
+        <div class="modal-body  bg-dark">
+
+          <section class="texto-modal">
+            <p class="text-color"> Projeto realizado com intuito de aplicar todas as ferramentas e tecnologias
+              aprendidas durante o curso de desenvolvimento full-stack [modulo 1] da instituição Resilia Educação +
+              Stone, tais como:</p>
+            <ul>
+              <li class="text-color">HTML</li>
+              <li class="text-color">CSS</li>
+              <li class="text-color">Javascript</li>
+              <li class="text-color">Bootstrap</li>
+            </ul>
+
+            <p class="text-color">Incentivadores: </p>
+            <img class="logo-img" src="../../img/logoresilia.jpg"></img>
+            <img class="logo-img"
+              src="https://seeklogo.com/images/S/stone-pagamentos-logo-781DFFF629-seeklogo.com.png"></img>
+            <img class="logo-img" src="https://blog.provi.com.br/wp-content/themes/provi/assets/images/logo.png"></img>
+          </section>
+
+        </div>
+
+        <footer class="modal-footer bg-dark ">
+
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">Fechar</button>
+
+        </footer>
+      </dialog>
+    </main>
+  </div>
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
     <script src="../../js/models/CepModel.js"></script>
     <script src="../../js/controllers/CepController.js"></script>

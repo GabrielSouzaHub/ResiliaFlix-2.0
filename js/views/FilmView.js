@@ -15,7 +15,7 @@ class FilmView {
     }
     updatePesquisa(model) {
         try {
-            if (model.title === undefined) throw `<img class="picture-erro" src=../../ResiliaFlix-2.0/img/404.jpg>`
+            if (model.title === undefined) throw `<img class="picture-erro" src=../../../ResiliaFlix-2.0/img/404.jpg>`
             this.containerSearch.innerHTML =
                 `
 
@@ -46,7 +46,7 @@ class FilmView {
         </div>
          `
         } catch (e) {
-            this.container.innerHTML =
+            this.containerSearch.innerHTML =
                 `
             ${e}
             `
