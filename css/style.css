@@ -509,8 +509,9 @@ span {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 100%;
         max-width: 100%;
+        gap:0;
        
     }
 
@@ -530,11 +531,14 @@ span {
     .info-um {
         width: 90%;
         padding: auto;
+        margin-top: 3%;
 
     }
 
     .info-dois {
-        width: 100%;
+        margin: 0;
+        width: 90%;
+        height: 100%;
     }
 
     picture {
@@ -718,6 +722,14 @@ span {
 
     .btn{
         margin: 0;
+    }
+
+    .footer-dark {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
     }
 
 
