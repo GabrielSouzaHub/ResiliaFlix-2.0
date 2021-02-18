@@ -10,7 +10,13 @@ class CepView{
     }
     update(model){
         try{
-            if(model.endereco == undefined)  this.cep.setCustomValidity("CEP Não Encontrado");
+            if(model.endereco == undefined){ 
+                this.inputEndereco.value = "";
+                this.inputBairro.value = "";
+                this.inputCidade.value = "";
+                this.inputEstado.value = "";
+                this.cep.setCustomValidity("CEP Não Encontrado")
+            }
             else{
                 this.cep.setCustomValidity("");
                 this.inputEndereco.value = model.endereco;
@@ -20,12 +26,7 @@ class CepView{
             }
         }
         catch(e){
-            
-            this.inputEndereco.value = "";
-            this.inputBairro.value = "";
-            this.inputCidade.value = "";
-            this.inputEstado.value = "";
-           
+            alert(`Ocorreu um erro, por favor tente novamente. Erro:${e}`) 
         }
     }
 }
