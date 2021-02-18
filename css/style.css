@@ -61,15 +61,6 @@
 
 /* Carrossel*/
 
-.imagem-carousel {
-
-    height: 83vh;
-    object-fit: cover;
-    object-position: 0 15%;
-    cursor: pointer;
-
-
-}
 
 .content {
     display: grid;
@@ -89,7 +80,7 @@
 .imagem-carousel-1 {
     height: 83vh;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: fill;
     object-position: 50% 15%;
     cursor: pointer;
 
@@ -667,6 +658,19 @@ span {
         justify-content: center;
         width: 100%;
 
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 100%;
+        max-width: 100%;
+        gap:0;
+       
+    }
+
+
+    .film-container {
+      
     }
 
     .input {
