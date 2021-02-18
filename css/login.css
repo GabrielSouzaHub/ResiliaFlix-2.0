@@ -19,8 +19,7 @@ body {
 }
 
 .logo {
-    font-size: 28px;
-    font-family: 'Fredoka One', cursive;
+    
     margin-left: 5%;
 
 }
@@ -82,10 +81,14 @@ a {
         width: 100%;
     }
 
-    .logo{
+    .logo-img{
         display:flex;
-        width: 250px;
+        width: 180px;
+    }
+
+    .logo{
         margin: 0 auto;
+
     }
 
 

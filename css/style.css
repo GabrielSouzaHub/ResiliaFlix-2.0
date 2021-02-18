@@ -116,6 +116,10 @@
 
 }
 
+picture{
+    margin-bottom :8%;
+}
+
 .main-content {
     background-color: #212529;
     padding: 0;
@@ -331,7 +335,7 @@ span {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        padding:0;
+        padding: 0;
 
     }
 
@@ -349,13 +353,10 @@ span {
 
     }
 
-
-
     .grid-container {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-
 
     }
 
@@ -439,11 +440,9 @@ span {
         width: 300px;
         margin: 0 auto;
     }
-}
 
+    /*footer*/
 
-/*footer*/
-@media (max-width:767px) {
     .footer-dark .item:not(.social) {
         text-align: center;
         padding-bottom: 20px;
@@ -457,35 +456,13 @@ span {
         text-align: center;
         margin-top: 20px;
     }
-
 }
-
 
 
 /* Responsive ipad*/
 
-
-/*footer*/
-@media (max-width:1023px) and (min-width:768px) {
-    .footer-dark .item:not(.social) {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-
-    .footer-dark .item.text {
-        margin-bottom: 0;
-    }
-
-    .footer-dark .item.social {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-}
-
-
-@media (max-width:1023px) and (min-width:768px) {
-
+@media (width:768px) {
+   
     .btn {
         margin-left: 40%;
     }
@@ -608,6 +585,23 @@ span {
 
     }
 
+    /* footer */
+
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-dark .item.text {
+        margin-bottom: 0;
+    }
+
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
 }
 
 /* responsividade para galaxy fold*/
@@ -729,14 +723,11 @@ span {
     }
 
     .footer-dark {
-        position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
         z-index: 1030;
     }
-
-
 
 
 }

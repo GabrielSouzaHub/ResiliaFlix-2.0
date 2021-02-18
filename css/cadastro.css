@@ -14,16 +14,10 @@ body {
 }
 
 .logo-img{
-    display:flex;
     width: 250px;
-    margin: 0;
 }
 .logo {
-    font-size: 28px;
-    font-family: 'Fredoka One', cursive;
-    margin-left: 5%;
-
-
+   margin-left: 5%;
 }
 
 .divContainer {
@@ -139,6 +133,14 @@ a {
         align-items: center;
         margin: 0 auto;
         margin-left: 10%;
+    }
+
+    .logo-img{
+        width: 180px;
+    }
+
+    .logo{
+        margin:0 auto;
     }
 }
 
