@@ -9,7 +9,6 @@
 
 /* pagina principal*/
 
-
 /*navbar*/
 
 .btn-search {
@@ -60,7 +59,6 @@
 
 
 /* Carrossel*/
-
 
 .content {
     display: grid;
@@ -502,8 +500,8 @@ span {
         display: grid;
         grid-template-columns: 100%;
         max-width: 100%;
-        gap:0;
-       
+        gap: 0;
+
     }
 
 
@@ -659,19 +657,17 @@ span {
         width: 100%;
 
     }
-    
+
     .grid-container {
         display: grid;
         grid-template-columns: 100%;
         max-width: 100%;
-        gap:0;
-       
+        gap: 0;
+
     }
 
 
-    .film-container {
-      
-    }
+    .film-container {}
 
     .input {
         width: 400px;
@@ -715,16 +711,16 @@ span {
 
     }
 
-    
+
     .logo {
         margin: 0 5% 0 0;
     }
 
-    .input{
+    .input {
         margin: 0 0 0 15%;
     }
 
-    .btn{
+    .btn {
         margin: 0;
     }
 
