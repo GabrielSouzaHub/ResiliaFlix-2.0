@@ -331,6 +331,7 @@ span {
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        padding:0;
 
     }
 
@@ -359,13 +360,16 @@ span {
     }
 
     .info-um {
-        width: 90%;
+        width: 97%;
         padding: auto;
+        margin-left: 2%;
 
     }
 
     .info-dois {
-        width: 100%;
+        width: 97%;
+        margin-left: 2%;
+
     }
 
     picture {
@@ -390,7 +394,7 @@ span {
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        margin: 0 auto;
+        margin: 2% auto;
 
     }
 
