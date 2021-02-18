@@ -735,11 +735,20 @@ span {
 
 @media (min-width:1600px) {
     .content{
-        min-height: 750px;
+        min-height: 850px;
+    }
+
+    .containers{
+        padding: 0;
     }
 
     .grid-container{
         margin: 0 auto;
+        gap:0%;
+    }
+
+    .poster{
+    width: 400px;
     }
 
     .btn{
