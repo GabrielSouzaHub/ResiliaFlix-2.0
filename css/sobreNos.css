@@ -19,7 +19,7 @@ body {
   background: #33343c;
   width: 450px;
   height: 500px;
-  margin: 5%;
+  margin: 2% auto;
   text-align: center;
   align-content: center;
 
@@ -73,14 +73,12 @@ body {
 .logo-img{
   display:flex;
   width: 250px;
-  margin: 0;
 }
 
 .logo {
-  font-size: 28px;
-  font-family: 'Fredoka One', cursive;
-  margin-left: 5%;
-  color: #ffb700;
+  
+  margin: 0 auto;
+
 
 }
 
@@ -298,4 +296,24 @@ body {
   margin: 5% auto;
   height: 90%;
 }
+}
+
+
+@media (min-width:1400px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1%;
+    align-items: center;
+    min-height: 800px;
+  }
+
+  .cards{
+    margin: 2% auto;
+    padding: 0;
+    max-width: 500px;
+
+  }
+
+   
 }

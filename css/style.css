@@ -731,3 +731,25 @@ span {
 
 
 }
+
+
+@media (min-width:1600px) {
+    .content{
+        min-height: 750px;
+    }
+
+    .grid-container{
+        margin: 0 auto;
+    }
+
+    .btn{
+        margin: 0 auto;
+    }
+
+    .input{
+    margin-left:40%;    }
+
+    .logo{
+        margin: 0 0 0 10%;
+    }
+}
